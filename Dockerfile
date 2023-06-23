@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8080
+ADD target/TMS-0.0.1-SNAPSHOT.jar TMS-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/TMS-0.0.1-SNAPSHOT.jar"]
